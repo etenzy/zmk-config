@@ -1,0 +1,17 @@
+combo_parans {
+    bindings = <&macro_parens>;
+    key-positions = <9 10>;
+    layers = <2>;
+};
+
+combo_brackets {
+    bindings = <&macro_brackets>;
+    key-positions = <20 21>;
+    layers = <2>;
+};
+
+combo_braces {
+    bindings = <&macro_braces>;
+    key-positions = <32 33>;
+    layers = <2>;
+};
