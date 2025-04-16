@@ -1,5 +1,5 @@
 combo_caps {
-    binding = <&kp CLCK>;
+    binding = <&caps_word>;
     key-positions = <24 35>;
     layers = <0>;
 }
