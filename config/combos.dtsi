@@ -20,4 +20,4 @@ combo_braces {
     bindings = <&macro_braces>;
     key-positions = <32 33>;
     layers = <2>;
-};()
+};
