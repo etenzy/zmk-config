@@ -11,8 +11,7 @@
 #define DEFAULT  0
 #define FUNCTION 1 
 #define LOWER    2
-#define RAISE    3
-#define ADJUST   4
+#define ADJUST   3
 
 / {
     behaviors {
@@ -165,22 +164,6 @@
                 &kp ESC    &hml LCTRL A  &hml LALT S  &hml LCMD D  &hml LSHFT F  &hmlshift LS(LC(LG(LEFT_ALT))) G       &hmrshift RS(RC(RG(RIGHT_ALT))) H   &hmr RSHFT J  &hmr RCMD K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
                 &kp LSHFT  &trans        &trans       &trans       &trans        &trans                                 &trans                              &trans        &kp LBKT     &kp RBKT     &kp GRAVE        &trans
                                                       &trans       &trans        &kp SPACE                              &kp RET                             &kp BSPC      &mo 4
-            >;
-        };
-
-        raise_layer {
-            display-name = "Raise";
-            // -----------------------------------------------------------------------------------------
-            // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |   &  |  *  |  (  |  )  | BSPC |
-            // |  TAB |     |     |     |     |     |   |  -  |   =  |     |     |     |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |   +  |     |     |     |  ~   |
-            //                    | GUI | ADJ | SPC |   | ENT | BSPC | ALT |
-
-            bindings = <
-                &kp ESC    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-                &kp TAB    &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-                &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                            &mo 4  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
